@@ -37,10 +37,10 @@ function render(variables = {}) {
           <h2>${variables.role}</h2>
           <h3>${variables.city}, ${variables.country}</h3>
           <ul class=${variables.socialMediaPosition}>
-            <li><a href="https://twitter.com/4geeksacademy"><i class="fab fa-twitter"></i></a></li>
-            <li><a href="https://github.com/4geeksacademy"><i class="fab fa-github"></i></a></li>
-            <li><a href="https://linkedin.com/school/4geeksacademy"><i class="fab fa-linkedin"></i></a></li>
-            <li><a href="https://instagram.com/4geeksacademy"><i class="fab fa-instagram"></i></a></li>
+            <li><a href="https://twitter.com/"${variables.twitter}yl><i class="fab fa-twitter"></i></a></li>
+            <li><a href="https://github.com/"${variables.github}><i class="fab fa-github"></i></a></li>
+            <li><a href="https://linkedin.com/"${variables.linkedin}><i class="fab fa-linkedin"></i></a></li>
+            <li><a href="https://instagram.com/"${variables.instagram}><i class="fab fa-instagram"></i></a></li>
           </ul>
         </div>
     `;
@@ -54,18 +54,20 @@ window.onload = function() {
     // if includeCover is true the algorithm should show the cover image
     includeCover: true,
     // this is the image's url that will be used as a background for the profile cover
-    background: "https://images.unsplash.com/photo-1511974035430-5de47d3b95da",
+    background:
+      "https://www.nyhabitat.com/sp/blog/wp-content/uploads/2016/01/los-10-mejores-sitios-de-brunch-en-Nueva-York-horizonte-1024x682.jpg",
     // this is the url for the profile avatar
-    avatarURL: "https://randomuser.me/api/portraits/women/42.jpg",
+    avatarURL:
+      "https://yt3.googleusercontent.com/KEex1oxGs68FOHEg_Lbnwgp00LrL8cHhzzzfXRKKSUEMBBnO2tKifIl1raL2QYkvhwDojKBl=s900-c-k-c0x00ffffff-no-rj",
     // social media bar position (left or right)
     socialMediaPosition: "position-right",
     // social media usernames
-    twitter: null,
-    github: null,
-    linkedin: null,
-    instagram: null,
-    name: "Lucy",
-    lastName: "Boilett",
+    twitter: "https://twitter.com",
+    github: "https://github.com/4geeksacademy",
+    linkedin: "https://linkedin.com/school/4geeksacademy",
+    instagram: "https://instagram.com/4geeksacademy",
+    name: "First Name",
+    lastName: "Last Name",
     role: "Web Developer",
     country: "USA",
     city: "Miami"
